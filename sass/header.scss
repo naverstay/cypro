@@ -1,0 +1,128 @@
+//*************************** header
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 10px;
+  line-height: 100px;
+
+  .section_inner {
+    padding: 0 25px;
+  }
+}
+
+.logo_block {
+  text-align: center;
+
+  @include respond-to-min($resp_step_2) {
+    float: left;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+
+  span,
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+  }
+
+  span {
+    font-size: 15px;
+    color: #a7a7a7;
+    padding-left: 12px;
+    letter-spacing: -.3px;
+  }
+}
+
+.callback_block {
+  float: right;
+}
+
+.contact_phones {
+  @extend %clearfix;
+
+  dt {
+    @extend %icon_pseudo;
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 27px;
+    position: relative;
+
+    &:before {
+      content: $i-phone;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      color: #ffb600;
+      margin-top: -10px;
+    }
+  }
+
+  dd {
+    white-space: nowrap;
+    float: right;
+    width: 50%;
+  }
+
+  dt, dd {
+    margin-bottom: 4px;
+    line-height: 22px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+}
+
+// *********  menu
+
+.main_menu {
+  text-align: center;
+  font-family: $SourceSansPro;
+
+  @include respond-to-min($resp_step_2) {
+    float: right;
+    padding-right: 30px;
+    text-align: left;
+  }
+
+}
+
+.main_m_item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  max-width: 330px;
+}
+
+.main_menu {
+  float: right;
+}
+
+.menu_item {
+  float: left;
+  margin: 0 17px;
+}
+
+.menu_link {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding-left: 32px;
+  text-decoration: none;
+
+}
+

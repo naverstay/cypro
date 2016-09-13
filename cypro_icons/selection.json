@@ -1,0 +1,108 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M816.411 296.929c-0.54 0.54-0.917 1.077-1.509 1.618l-212.859 212.913 212.859 212.913c1.455 1.618 2.426 3.235 3.827 4.85l109.96 109.96-4.421 4.313c-0.592 0.54-0.97 1.618-1.509 2.155l-22.369 22.101c-0.54 0.54-1.24 1.077-1.832 1.618l-59.291 59.291-327.132-327.186-212.481 212.374c-0.54 0.54-1.24 1.077-1.832 1.618l-113.196 113.196-89.316-89.477 327.24-327.186-327.24-327.186 89.316-89.477 110.338 110.5c1.725 1.127 3.227 2.373 4.576 3.766l212.759 212.382 326.809-326.646 58 58.214c1.166 0.566 2.165 1.289 3.016 2.155l-31.585-31.802c1.455 1.618 2.426 3.235 3.772 4.85l56.113 56.059z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "colorPermutations": {
+          "1177325512391291": []
+        },
+        "tags": [
+          "Cross"
+        ],
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "order": 62,
+        "id": 10,
+        "prevSize": 32,
+        "code": 59655,
+        "name": "cross"
+      },
+      "setIdx": 5,
+      "setId": 15,
+      "iconIdx": 10
+    },
+    {
+      "icon": {
+        "paths": [
+          "M706.134 595.2c-55.466 55.466-55.466 110.934-110.934 110.934s-110.934-55.466-166.4-110.934-110.934-110.934-110.934-166.4 55.466-55.466 110.934-110.934-110.934-221.866-166.4-221.866-166.4 166.4-166.4 166.4c0 110.934 113.966 335.834 221.866 443.734s332.8 221.866 443.734 221.866c0 0 166.4-110.934 166.4-166.4s-166.4-221.866-221.866-166.4z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "tags": [
+          "phone",
+          "telephone",
+          "contact",
+          "support",
+          "call"
+        ],
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "order": 63,
+        "prevSize": 32,
+        "ligatures": "phone, telephone",
+        "name": "phone",
+        "id": 67,
+        "code": 59648
+      },
+      "setIdx": 20,
+      "setId": 0,
+      "iconIdx": 66
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "cypro_icons"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "i-",
+      "metadata": {
+        "fontFamily": "cypro_icons",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "noie8": false,
+      "ie7": false,
+      "cssVars": true,
+      "showSelector": true,
+      "selector": "",
+      "classSelector": ".icon",
+      "showMetrics": true,
+      "showMetadata": true,
+      "showVersion": true,
+      "resetPoint": 59648
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 4473924,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 100,
+    "showCodes": true,
+    "gridSize": 16,
+    "showGrid": true
+  }
+}

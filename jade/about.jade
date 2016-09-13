@@ -1,0 +1,100 @@
+- var offers = ['Кипр','Мальдивы','Маврикий','Сейшелы','США','Япония','Перу','ОАЭ','Вьетнам','Мексика','острова Карибского бассейна', 'Украина'];
+
+include mixins.pug
+doctype html
+html(lang='ru')
+    +dev_head('Отдых на Кипре')
+    body
+        #trailer.is_overlay
+            video#video(width='100%', height='auto', autoplay='autoplay', loop='loop', preload='auto', src='movie/shutterstock_v9431102.webm') 
+
+        div.header
+            .section_inner.clearfix
+                .logo_block
+                    a.logo(href='#')
+                        img(src='i/logo.png')
+                        span Традиции и надежность
+                        
+                ul.main_menu
+                    li.main_m_item
+                        dl.contact_phones
+                            dt Украина:
+                            dd +38 (097) 17 11 844
+                            dt Кипр:
+                            dd +35 799 69 55 80
+                    li.main_m_item
+                        a.callback_btn.btn_v1.btn_blue_transp.callbackBtn(href='#') Заказать звонок
+                        
+            .hero_block
+                .section_inner
+                    .hero_text Отдых на Кипре в эксклюзивных виллах всего за 3 часа полета из Киева
+                        
+        .wrapper
+            .base
+                div.main_content
+                    .offer_section
+                        .section_inner
+                            ul.offer_list
+                                each val in offers
+                                    li
+                                        .offer_unit
+                                            .offer_img
+                                                img(src='i/offer_1.jpg')
+                                            a.offer_link(href='#')=val
+                                        
+                    .gift_section
+                        .section_inner
+                            .gift_form
+                                .form_caption Каждый 7-й день отдыха в подарок!
+                                p Оставьте заявку, и получите каталог с актуальными ценами.
+    
+                                form.validateMe(action='#')
+                                    .form_cell.f_cell_v1
+                                        input.f_input_v1(placeholder='Введите Ваше имя' class='validate[required]')
+                                    .form_cell.f_cell_v1
+                                        input.f_input_v1(placeholder='Введите Ваш телефон' class='validate[required]')
+                                    .form_cell.f_cell_v1
+                                        input.f_input_v1(placeholder='Введите Ваш e-mail')
+    
+                                    .form_cell.f_cell_v1
+                                        button.btn_v2.yellow_btn.subscribe_btn Оставить заявку
+    
+                                .form_tip
+                                    span.tip_star *
+                                    span Заявка Вас ни к чему не обязывает. Мы с удовольствием поможем Вам определиться с выбором и ответим на все Ваши вопросы.
+                                    
+                        .section_inner
+                            ul.feature_list
+                                +loop_while(2)
+                                    li
+                                        .feature_item
+                                            h3 Скорость
+                                            p Заявка на бронирование оформляется в течении 5 минут.
+                                    li
+                                        .feature_item
+                                            h3 Ассортимент
+                                            p Более 230 неповторимых вариантов апартаментов.
+                                    li
+                                        .feature_item
+                                            h3 Опыт
+                                            p Используя наш сервис, ежедневно бронируется от 30 до 54 поездок на Кипр.
+
+                .footer
+                    .section_inner.clearfix
+                        .logo_block
+                            a.logo(href='#')
+                                img(src='i/logo.png')
+                                span Традиции и надежность
+
+                        ul.main_menu
+                            li.main_m_item
+                                dl.contact_phones
+                                    dt Украина:
+                                    dd +38 (097) 17 11 844
+                                    dt Кипр:
+                                    dd +35 799 69 55 80
+                            li.main_m_item
+                                a.callback_btn.btn_v1.btn_blue_transp.callbackBtn(href='#') Заказать звонок
+                    
+        +popup()
+    +scripts()
