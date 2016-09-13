@@ -1,0 +1,18 @@
+.how_it_works {
+
+  &_caption {
+    background-color: #29333d;
+    text-align: center;
+  }
+
+  &_steps {
+    @extend %clearfix;
+
+  }
+
+  &_step {
+    position: relative;
+
+  }
+
+}

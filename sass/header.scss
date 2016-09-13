@@ -123,6 +123,22 @@
   display: block;
   padding-left: 32px;
   text-decoration: none;
-
 }
 
+.nav_menu {
+
+  > li {
+    float: left;
+    padding-right: 15px;
+  }
+}
+
+.nav_link {
+  display: block;
+  font-size: 15px;
+  color: #a7a7a7;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

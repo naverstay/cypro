@@ -26,8 +26,32 @@ mixin loop_while(counter)
         -i++;
         block
 
+mixin header()
+    div.header
+        .section_inner.clearfix
+            .logo_block
+                a.logo(href='index.html')
+                    img(src='i/logo.png')
+                    span Традиции и надежность
+
+            ul.main_menu
+                li.main_m_item
+                    ul.nav_menu
+                        li: a.nav_link(href='about.html') О нас
+                li.main_m_item
+                    dl.contact_phones
+                        dt Украина:
+                        dd +38 (097) 17 11 844
+                        dt Кипр:
+                        dd +35 799 69 55 80
+                li.main_m_item
+                    a.callback_btn.btn_v1.btn_blue_transp.callbackBtn(href='#') Заказать звонок
+
+        .hero_block
+            .section_inner
+                .hero_text Отдых на Кипре в эксклюзивных виллах всего за 3 часа полета из Киева
 mixin popup()
-    #callback_popup.popup
+    #callback_popup.popup(style='display:none;')
         form.validateMe(action='#')
             p Введите ваше имя и телефон и получите  <br>  развернутую консультацию специалиста 
             .form_cell.f_cell_v1
