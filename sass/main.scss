@@ -51,7 +51,7 @@ body {
   //position: absolute;
   //top: 0;
   //right: 0;
-  //left: 0;
+  //left: 0; 
 
   @include respond-to-min($resp_step_2) {
     padding-top: 80px;
@@ -149,4 +149,3 @@ body {
 .text_upper {
   text-transform: uppercase;
 }
-
